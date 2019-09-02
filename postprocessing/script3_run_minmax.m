@@ -14,7 +14,7 @@ load('../data/data_Leukemia.mat')
 minmax_model2_smin = redHUMAN_minmax(model2_smin,thermoData_Recon2,data_Leukemia);
 gem2 = model2_smin.OriginalGEM;
 gem2.OriginalGEM = gem2;
-minmax_gem2 = redHUMAN_minmax(gem2,thermoData_Recon2,minmax_model2_smin(:,1));
+minmax_gem2 = redHUMAN_minmax(gem2,thermoData_Recon2,data_Leukemia,minmax_model2_smin(:,1));
 % save('./outputs/MinMax_Recon2.mat','minmax_model2_smin','minmax_gem2') 
 
 
@@ -26,7 +26,7 @@ load('../data/thermoData_Recon3.mat');
 minmax_model3_smin = redHUMAN_minmax(model3_smin,thermoData_Recon3,data_Leukemia);
 gem3 = model3_smin.OriginalGEM;
 gem3.OriginalGEM = gem3;
-minmax_gem3 = redHUMAN_minmax(gem3,thermoData_Recon3,minmax_model3_smin(:,1));
+minmax_gem3 = redHUMAN_minmax(gem3,thermoData_Recon3,data_Leukemia,minmax_model3_smin(:,1));
 % save('./outputs/MinMax_Recon3.mat','minmax_model3_smin','minmax_gem3') 
 
                                                  
