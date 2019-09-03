@@ -7,7 +7,7 @@ function minmax = redHUMAN_minmax(model,thermo_data,data_Leukemia,rxns)
     end
 
     % Build the specific model for the chosen cancer types
-    if contains(model.description,'redHUMAN3') || contains(model.description,'Recon3')
+    if contains(model.description,'recon3') || contains(model.description,'Recon3')
         data_Leukemia(:,1) = strrep(data_Leukemia(:,1),'glc_e','glc_D_e');
     end
     [~,ii] = ismember(data_Leukemia(1:27,1),model.rxns);
