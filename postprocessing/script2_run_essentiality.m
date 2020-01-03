@@ -28,3 +28,7 @@ gem3.OriginalGEM = gem3;
 [EssGenes_GEM_leukemia3, gem3_leukemia] = redHUMAN_geneEss(gem3,thermoData_Recon3,data_Leukemia);
 % save('./outputs/EssGenes_Recon3.mat','EssGenes_leukemia3','EssGenes_GEM_leukemia3') 
 
+%% link genes to reactions
+table2 = table_gene_rxns_ess(model2_smin_leukemia,EssGenes_leukemia2,EssGenes_GEM_leukemia2);
+
+table3 = table_gene_rxns_ess(model3_smin_leukemia,EssGenes_leukemia3,EssGenes_GEM_leukemia3);
